@@ -19,7 +19,7 @@ public class PersonagemGame {
     }
 
     public void tomarDano(int quantidadeDeDano) {
-        if(saudeAtual - quantidadeDeDano) >= 0 {
+        if((saudeAtual - quantidadeDeDano) >= 0) {
             setSaudeAtual(saudeAtual - quantidadeDeDano);
         } else {
             setSaudeAtual(0);
@@ -27,7 +27,7 @@ public class PersonagemGame {
     }
 
     public void receberCura(int quantidadeDeCura) {
-        if(saudeAtual + quantidadeDeCura) <= 100 {
+        if((saudeAtual + quantidadeDeCura) <= 100) {
             setSaudeAtual(saudeAtual + quantidadeDeCura);
         } else {
             setSaudeAtual(100);
