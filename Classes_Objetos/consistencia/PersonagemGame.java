@@ -52,5 +52,6 @@ public class PersonagemGame {
 
     PersonagemGame(int saudeAtual, String nome) {
         setSaudeAtual(saudeAtual);
+	setNome(nome);
     }
 }
