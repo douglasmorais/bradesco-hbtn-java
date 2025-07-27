@@ -1,5 +1,3 @@
-package br.com.bradesco-hbtn-java.heranca;
-
 public class Animal {
     private String name;
 
