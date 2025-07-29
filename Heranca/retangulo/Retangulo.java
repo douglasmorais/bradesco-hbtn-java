@@ -25,4 +25,8 @@ public class Retangulo extends FormaGeometrica {
             this.altura = altura;
         }
     }
+
+    public Retangulo() {
+        super();
+    }
 }
