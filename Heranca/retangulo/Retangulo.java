@@ -8,7 +8,7 @@ public class Retangulo extends FormaGeometrica {
 
     public void setLargura(double largura) {
         if(largura < 0) {
-            throw java.lang.IllegalArgumentException("Largura deve ser maior ou igual a 0");
+            throw new java.lang.IllegalArgumentException("Largura deve ser maior ou igual a 0");
         } else {
             this.largura = largura;
         }
@@ -20,7 +20,7 @@ public class Retangulo extends FormaGeometrica {
 
     public void setAltura(double altura) {
         if(altura < 0) {
-            throw java.lang.IllegalArgumentException("Altura deve ser maior ou igual a 0");
+            throw new java.lang.IllegalArgumentException("Altura deve ser maior ou igual a 0");
         } else {
             this.altura = altura;
         }
