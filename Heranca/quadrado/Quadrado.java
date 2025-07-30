@@ -18,4 +18,10 @@ public class Quadrado extends Retangulo {
     public Quadrado() {
         super();
     }
+
+    public .toString() {
+        String str = "[Quadrado] %.2f";
+        String output = String.format(str, getLado());
+        return output;
+    }
 }
