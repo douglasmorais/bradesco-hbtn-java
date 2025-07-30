@@ -19,7 +19,7 @@ public class Quadrado extends Retangulo {
         super();
     }
 
-    public .toString() {
+    public String toString() {
         String str = "[Quadrado] %.2f";
         String output = String.format(str, getLado());
         return output;
