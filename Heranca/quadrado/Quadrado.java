@@ -15,7 +15,7 @@ public class Quadrado extends Retangulo {
         }
     }
 
-    public quadrado() {
+    public Quadrado() {
         super();
     }
 }
