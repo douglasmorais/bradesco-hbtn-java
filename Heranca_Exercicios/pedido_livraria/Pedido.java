@@ -33,9 +33,10 @@ public class Pedido {
 
         for(int i = 0; i < tamanhoPedido; i++) {
             liquido = (itens[i].getQuantidade()) * itens[i].getProduto().obterPrecoLiquido();
-            liquido = liquido - getPercentualDesconto();
+            //liquido = liquido - getPercentualDesconto();
             total += liquido;
         }
+        total = (1 - (getPercentualDesconto()/100)) * total ;
 
         return total;
     }
