@@ -1,7 +1,3 @@
-package resumo_pedido;
-
-import javax.sound.midi.SysexMessage;
-
 public class Pedido {
     private double percentualDesconto;
     private ItemPedido[] itens;

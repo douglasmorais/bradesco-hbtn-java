@@ -1,10 +1,6 @@
-package resumo_pedido;
-
-import resumo_pedido.produtos.Produto;
-
 public class ItemPedido {
     private int quantidade;
-    private Produto produto;
+    private produtos.Produto produto;
 
     public int getQuantidade() {
         return quantidade;
@@ -14,15 +10,15 @@ public class ItemPedido {
         this.quantidade = quantidade;
     }
 
-    public Produto getProduto() {
+    public produtos.Produto getProduto() {
         return produto;
     }
 
-    public void setProduto(Produto produto) {
+    public void setProduto(produtos.Produto produto) {
         this.produto = produto;
     }
 
-    public ItemPedido(Produto produto, int quantidade) {
+    public ItemPedido(produtos.Produto produto, int quantidade) {
         setProduto(produto);
         setQuantidade(quantidade);
     }
