@@ -1,5 +1,3 @@
-package pedido_livraria;
-
 import java.util.*;
 import pedido_livraria.produtos.*;
 
