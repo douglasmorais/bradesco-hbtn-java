@@ -1,27 +1,27 @@
 public class Program {
     public static void main(String[] args) {
-        workflow.ProcessadorVideo processadorVideo1 = new workflow.ProcessadorVideo();
-        processadorVideo1.registrarCanal(new workflow.Slack());
-        processadorVideo1.registrarCanal(new workflow.Teams());
+        ProcessadorVideo processadorVideo1 = new ProcessadorVideo();
+        processadorVideo1.registrarCanal(new Slack());
+        processadorVideo1.registrarCanal(new Teams());
 
-        workflow.ProcessadorVideo processadorVideo2 = new workflow.ProcessadorVideo();
-        processadorVideo2.registrarCanal(new workflow.Slack());
-        processadorVideo2.registrarCanal(new workflow.Email());
+        ProcessadorVideo processadorVideo2 = new ProcessadorVideo();
+        processadorVideo2.registrarCanal(new Slack());
+        processadorVideo2.registrarCanal(new Email());
 
-        workflow.ProcessadorVideo processadorVideo3 = new workflow.ProcessadorVideo();
-        processadorVideo3.registrarCanal(new workflow.Sms());
+        ProcessadorVideo processadorVideo3 = new ProcessadorVideo();
+        processadorVideo3.registrarCanal(new Sms());
 
-        workflow.ProcessadorVideo processadorVideo4 = new workflow.ProcessadorVideo();
+        ProcessadorVideo processadorVideo4 = new ProcessadorVideo();
 
-        workflow.ProcessadorVideo processadorVideo5 = new workflow.ProcessadorVideo();
-        processadorVideo5.registrarCanal(new workflow.Sms());
-        processadorVideo5.registrarCanal(new workflow.Slack());
-        processadorVideo5.registrarCanal(new workflow.Email());
-        processadorVideo5.registrarCanal(new workflow.Teams());
+        ProcessadorVideo processadorVideo5 = new ProcessadorVideo();
+        processadorVideo5.registrarCanal(new Sms());
+        processadorVideo5.registrarCanal(new Slack());
+        processadorVideo5.registrarCanal(new Email());
+        processadorVideo5.registrarCanal(new Teams());
 
-        workflow.Video video1 = new workflow.Video("video1.mpg", workflow.FormatoVideo.MPEG);
-        workflow.Video video2 = new workflow.Video("video2.avi", workflow.FormatoVideo.AVI);
-        workflow.Video video3 = new workflow.Video("video3.mkv", workflow.FormatoVideo.MKV);
+        Video video1 = new Video("video1.mpg", FormatoVideo.MPEG);
+        Video video2 = new Video("video2.avi", FormatoVideo.AVI);
+        Video video3 = new Video("video3.mkv", FormatoVideo.MKV);
 
         processadorVideo1.processar(video1);
 
