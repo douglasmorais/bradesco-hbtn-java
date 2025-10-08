@@ -1,19 +1,12 @@
-package workflow;
-
-import workflow.atividades.CarregarVideo;
-import workflow.atividades.CodificarVideo;
-import workflow.atividades.EnviarEmail;
-import workflow.atividades.ModificarStatusVideo;
-
 public class Program {
     public static void main(String[] args) {
         MaquinaWorkflow maquinaWorkflow = new MaquinaWorkflow();
 
         Workflow workflowEncodificarVideos = new Workflow();
 
-        workflowEncodificarVideos.registrarAtividade(new CarregarVideo());
-        workflowEncodificarVideos.registrarAtividade(new CodificarVideo());
-        workflowEncodificarVideos.registrarAtividade(new EnviarEmail());
+        workflowEncodificarVideos.registrarAtividade(new atividades.CarregarVideo());
+        workflowEncodificarVideos.registrarAtividade(new atividades.CodificarVideo());
+        workflowEncodificarVideos.registrarAtividade(new atividades.EnviarEmail());
 
         maquinaWorkflow.executar(workflowEncodificarVideos);
 
@@ -21,8 +14,8 @@ public class Program {
 
         Workflow workflowVideos = new Workflow();
 
-        workflowVideos.registrarAtividade(new CarregarVideo());
-        workflowVideos.registrarAtividade(new EnviarEmail());
+        workflowVideos.registrarAtividade(new atividades.CarregarVideo());
+        workflowVideos.registrarAtividade(new atividades.EnviarEmail());
 
         maquinaWorkflow.executar(workflowVideos);
 
@@ -30,9 +23,9 @@ public class Program {
 
         Workflow workflowVideosStatus = new Workflow();
 
-        workflowVideosStatus.registrarAtividade(new CarregarVideo());
-        workflowVideosStatus.registrarAtividade(new ModificarStatusVideo());
-        workflowVideosStatus.registrarAtividade(new EnviarEmail());
+        workflowVideosStatus.registrarAtividade(new atividades.CarregarVideo());
+        workflowVideosStatus.registrarAtividade(new atividades.ModificarStatusVideo());
+        workflowVideosStatus.registrarAtividade(new atividades.EnviarEmail());
 
         maquinaWorkflow.executar(workflowVideosStatus);
     }
