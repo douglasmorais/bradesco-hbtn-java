@@ -1,4 +1,4 @@
-package resumo_pedido.provedores;
+package provedores;
 
 public class JadLog implements ProvedorFrete {
     @Override

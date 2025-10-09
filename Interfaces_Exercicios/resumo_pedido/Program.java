@@ -1,6 +1,3 @@
-package resumo_pedido;
-
-import resumo_pedido.provedores.*;
 import java.util.Locale;
 
 public class Program {
@@ -11,17 +8,17 @@ public class Program {
         Pedido pedido3 = new Pedido(3, 3000, 53.00);
         Pedido pedido4 = new Pedido(4, 7000, 300.00);
 
-        ProcessadorPedido processadorPedidoSedex = new ProcessadorPedido(new Sedex());
+        ProcessadorPedido processadorPedidoSedex = new ProcessadorPedido(new provedores.Sedex());
         processadorPedidoSedex.processar(pedido1);
 
         System.out.printf("%s - %.2f\n", pedido1.getFrete().getTipoProvedorFrete(), pedido1.getFrete().getValor());
 
-        ProcessadorPedido processadorPedidoJadLog = new ProcessadorPedido(new JadLog());
+        ProcessadorPedido processadorPedidoJadLog = new ProcessadorPedido(new provedores.JadLog());
         processadorPedidoJadLog.processar(pedido1);
 
         System.out.printf("%s - %.2f\n", pedido1.getFrete().getTipoProvedorFrete(), pedido1.getFrete().getValor());
 
-        ProcessadorPedido processadorPedidoLoggi = new ProcessadorPedido(new Loggi());
+        ProcessadorPedido processadorPedidoLoggi = new ProcessadorPedido(new provedores.Loggi());
         processadorPedidoLoggi.processar(pedido1);
 
         System.out.printf("%s - %.2f\n", pedido1.getFrete().getTipoProvedorFrete(), pedido1.getFrete().getValor());
