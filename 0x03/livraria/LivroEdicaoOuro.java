@@ -1,8 +1,15 @@
-import exceptions.AutorInvalidoException;
-import exceptions.LivroInvalidoException;
+package livraria;
+
+import livraria.exceptions.AutorInvalidoException;
+import livraria.exceptions.LivroInvalidoException;
 
 public class LivroEdicaoOuro extends Livro {
+    @Override
+    public double getPreco() {
+        return 1.3*super.getPreco();
+    }
+
     public LivroEdicaoOuro(String titulo, String autor, double preco) throws AutorInvalidoException, LivroInvalidoException {
-        super(titulo, autor, 1.3*preco);
+        super(titulo, autor, preco);
     }
 }
