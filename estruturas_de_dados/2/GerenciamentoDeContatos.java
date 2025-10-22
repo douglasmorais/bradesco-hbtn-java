@@ -20,7 +20,7 @@ public class GerenciamentoDeContatos {
             System.out.printf("Erro: Contato com nome %s já existe!\n", nome);
         } else {
             contatos.put(nome, contato);
-            System.out.printf("Contato %s adicionado com sucesso!", nome);
+            System.out.printf("Contato %s adicionado com sucesso!\n", nome);
         }
     }
 
