@@ -30,8 +30,7 @@ public class PessoasArray {
             if(nomes[mid].equals(nome)) {
                 System.out.printf("Nome %s encontrado na posição %d\n", nome, mid);
                 encontrado = true;
-            }
-            if(nomes[mid].substring(0, 1).compareTo(nome.substring(0, 1)) < 0) {
+            } else if(nomes[mid].substring(0, 1).compareTo(nome.substring(0, 1)) < 0) {
                 left = mid + 1;
             } else {
                 right = mid - 1;
