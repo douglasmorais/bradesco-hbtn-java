@@ -22,7 +22,7 @@ public class PessoasArray {
         boolean encontrado = false;
         System.out.printf("Procurando pelo nome: \"%s\"\n", nome);
         for(int i = 0; i < nomes.length; i++) {
-            System.out.printf("Passando pelo índice:%d\n", i);
+            System.out.printf("Passando pelo indice:%d\n", i);
             if(nomes[i].equals(nome)) {
                 System.out.printf("Nome pesquisado é %s que está na posição %d\n", nome, i);
                 encontrado = true;
