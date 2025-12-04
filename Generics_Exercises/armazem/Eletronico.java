@@ -7,9 +7,10 @@ public class Eletronico {
         this.valor = valor;
     }
 
-    public String toString(Eletronico eletronico) {
+    @Override
+    public String toString() {
         String eletronicoToString;
-        eletronicoToString = "[" + descricao + "] R$ " + valor;
+        eletronicoToString = "[" + descricao + "] R$ " + String.format("%.6f", valor);
 
         return eletronicoToString;
     }

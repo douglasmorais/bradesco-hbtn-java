@@ -1,13 +1,20 @@
+import java.util.HashMap;
 import java.util.Map;
 
-public class Armazem<Item> implements Armazenavel {
-    private Map<String, Item> itens;
+public class Armazem<T> implements Armazenavel<T> {
+    private Map<String, T> inventario;
 
-    public void adicionarAoInventario(String nome, T valor) {
-        
+    public Armazem() {
+        this.inventario = new HashMap<>();
     }
 
-    public T obterDoInventario(String nome) {
+    @Override
+    public void adicionarAoInventario(String nome, T valor) {
+        inventario.put(nome, valor);
+    }
 
+    @Override
+    public T obterDoInventario(String nome) {
+        return inventario.get(nome);
     }
 }
